@@ -36,5 +36,5 @@ The AI solution simplifies communication, accelerates product delivery, and boos
 
 ```bash
 git clone https://github.com/saitej13sai/AI-Product-Manager-Assistant.git
-cd AI-Product-Manager-Assistant
+
 
