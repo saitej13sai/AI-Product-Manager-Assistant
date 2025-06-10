@@ -1,61 +1,60 @@
-🧠 Overview
-Product managers juggle a range of tasks—requirement gathering, roadmap planning, generating user stories, and stakeholder communication. What if an AI assistant could automate the repetitive parts and support decision-making intelligently?
+# 🤖 AI Product Manager Assistant
 
-This project introduces an AI-powered Product Manager Assistant built using LangChain, Google Gemini, and FastAPI, designed to streamline PM workflows through a set of smart REST APIs. It runs in a Dockerized environment for easy setup and extensibility.
+An **AI-powered assistant** designed to help product managers with task automation, decision support, and intelligent recommendations.
 
-💡 What You’ll Learn
-How to orchestrate AI agents using LangChain for domain-specific tasks
+Built using **FastAPI**, orchestrated **AI agents via LangChain**, and integrated with **Gemini LLMs**, this project exposes REST APIs wrapped in a Dockerized environment for fast, portable deployment.
 
-How to expose AI functionality via REST APIs using FastAPI
+---
 
-How to deploy AI apps using Docker and manage secrets securely
+## 🚀 Project Overview
 
-Practical use cases of LLMs in product management and automation
+Product managers face constant pressure to deliver quickly while managing complex product workflows, communicating across teams, and making informed decisions.
 
-⚙️ Key Features
-🧠 LLM-powered agent workflows using LangChain + Gemini
+This assistant solves those challenges using **LLM-based automation**—generating user stories, drafting product requirements, suggesting roadmaps, and offering intelligent insights—all through simple API calls.
 
-🔗 Modular and extensible orchestration of product management tasks
+It’s a real-world example of how **AI can accelerate modern product development**.
 
-🔧 FastAPI backend with interactive Swagger UI for easy testing
+---
 
-🐳 Fully containerized via Docker and Docker Compose
+## ⚙️ Features
 
-🔐 Environment variable-based API key management
+✅ AI-driven product management assistant powered by LLMs  
+✅ REST API with interactive **Swagger UI** for exploration and testing  
+✅ Agent orchestration via **LangChain** for modular, extensible workflows  
+✅ Containerized deployment with **Docker & Docker Compose**  
+✅ Secure **.env-based API key management** for sensitive credentials  
 
-🛠️ Setup Instructions
-Prerequisites
-Docker and Docker Compose installed
+---
 
-A Gemini API key (or other LLM API key)
+## 🧠 How It Works
 
-Installation
-Clone the repo:
+This assistant uses LangChain agents to perform specialized tasks based on user prompts. These agents interact with LLMs like **Gemini** to perform natural language understanding, generate content, and structure output that’s actionable for product teams.
 
+### 🛠️ Key Capabilities:
+- **Requirement Gathering** – Generate product requirements from a feature description  
+- **User Story Generation** – Convert a feature idea into detailed Agile user stories  
+- **Roadmap Suggestions** – Recommend next steps or feature sequencing  
+- **Decision Support** – Provide pros/cons or data-driven insights using reasoning-capable models  
 
-git clone https://github.com/saitej13sai/AI-Product-Manager-Assistant.git
+---
+
+## 📦 Getting Started
+
+### ✅ Prerequisites
+- [Docker](https://www.docker.com/) & Docker Compose installed
+- A Gemini API key (or swap in your preferred LLM API key)
+
+### 🔧 Setup
+
+```bash
+# 1. Clone the repository
+https://github.com/saitej13sai/AI-Product-Manager-Assistant
 cd AI-Product-Manager-Assistant
-Create a .env file with your API key:
 
-env
+# 2. Create a .env file with your API key
+echo "GEMINI_API_KEY=your-api-key-here" > .env
 
-GEMINI_API_KEY=your-api-key-here
-Run the app:
-
-
+# 3. Run the application
 docker-compose up --build
-The Swagger UI will be available at: http://localhost:8000/docs
-
-
-📌 Why This Project Matters
-This assistant is not just a demo—it's a foundation for AI-native product tools. It proves how LLMs can:
-
-Automate tedious documentation tasks
-
-Support product decisions with reasoning
-
-Create structured output from natural input
-
-Whether you’re a product manager, engineer, or AI enthusiast, this project showcases how to deploy AI in impactful, real-world scenarios.
 
 
