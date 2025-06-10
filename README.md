@@ -1,40 +1,61 @@
-# AI Product Manager Assistant
+🧠 Overview
+Product managers juggle a range of tasks—requirement gathering, roadmap planning, generating user stories, and stakeholder communication. What if an AI assistant could automate the repetitive parts and support decision-making intelligently?
 
-An AI-powered assistant designed to help product managers with task automation, decision support, and intelligent recommendations.  
-Built using FastAPI and orchestrated AI agents via LangChain, this project exposes REST APIs wrapped in a Dockerized environment for easy deployment.
+This project introduces an AI-powered Product Manager Assistant built using LangChain, Google Gemini, and FastAPI, designed to streamline PM workflows through a set of smart REST APIs. It runs in a Dockerized environment for easy setup and extensibility.
 
----
+💡 What You’ll Learn
+How to orchestrate AI agents using LangChain for domain-specific tasks
 
-## 🚀 Project Description
+How to expose AI functionality via REST APIs using FastAPI
 
-This app aims to solve the challenge product managers face in managing complex workflows and decision-making processes.  
-By leveraging large language models and AI agents, the assistant automates tasks such as requirement gathering, user story generation, and roadmap planning.  
-The AI solution simplifies communication, accelerates product delivery, and boosts team productivity.
+How to deploy AI apps using Docker and manage secrets securely
 
----
+Practical use cases of LLMs in product management and automation
 
-## ⚙️ Features
+⚙️ Key Features
+🧠 LLM-powered agent workflows using LangChain + Gemini
 
-- AI-driven product management assistant powered by LLMs  
-- REST API with interactive Swagger UI documentation  
-- Agent orchestration via LangChain for modular and extensible AI workflows  
-- Containerized deployment with Docker and Docker Compose  
-- Secure environment variable management for API keys  
+🔗 Modular and extensible orchestration of product management tasks
 
----
+🔧 FastAPI backend with interactive Swagger UI for easy testing
 
-## 📦 Getting Started
+🐳 Fully containerized via Docker and Docker Compose
 
-### Prerequisites
+🔐 Environment variable-based API key management
 
-- Docker & Docker Compose installed on your machine  
-- A Gemini API key (or replace with your preferred LLM API key)  
+🛠️ Setup Instructions
+Prerequisites
+Docker and Docker Compose installed
 
-### Setup
+A Gemini API key (or other LLM API key)
 
-1. Clone the repository
+Installation
+Clone the repo:
 
-```bash
+
 git clone https://github.com/saitej13sai/AI-Product-Manager-Assistant.git
+cd AI-Product-Manager-Assistant
+Create a .env file with your API key:
+
+env
+
+GEMINI_API_KEY=your-api-key-here
+Run the app:
+
+
+docker-compose up --build
+The Swagger UI will be available at: http://localhost:8000/docs
+
+
+📌 Why This Project Matters
+This assistant is not just a demo—it's a foundation for AI-native product tools. It proves how LLMs can:
+
+Automate tedious documentation tasks
+
+Support product decisions with reasoning
+
+Create structured output from natural input
+
+Whether you’re a product manager, engineer, or AI enthusiast, this project showcases how to deploy AI in impactful, real-world scenarios.
 
 
